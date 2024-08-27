@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description>Новый скрипт без наполнения.</Description>
+  <Id>e2fb47c9-056c-4600-b991-a84f4f5e2890</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs />
+    <Id>e54f82ce-2cc6-4091-9e80-c90664ee2cbb</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>InitApplication.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params>
+    <Parameter z:Id="i3">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_Config</Name>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+    </Parameter>
+  </Params>
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params">
+    <d2p1:Variable z:Id="i4">
+      <d2p1:DefaultValueExpression></d2p1:DefaultValueExpression>
+      <d2p1:Name>connectionString</d2p1:Name>
+      <d2p1:TypeString>System.String</d2p1:TypeString>
+    </d2p1:Variable>
+  </Variables>
+  <Version i:nil="true" />
+</Script>

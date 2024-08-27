@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description>Новый скрипт без наполнения.</Description>
+  <Id>af7cd3df-45e1-4453-bfa3-0440d774bb50</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <Id>36d24faa-6d18-491d-859e-705b6ed4b39c</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>OnlyCurrenUser</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:boolean">true</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i5">
+            <PropertyName>Processes</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>processes</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Processes.GetProcesses</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i6" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i7" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i8" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i9" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>2d548e85-d392-47f3-9507-ad9bf0ef0595</Id>
+                    <Parent z:Ref="i8" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i10">
+                        <PropertyName>OnlyCurrenUser</PropertyName>
+                        <_dataType>Value</_dataType>
+                        <_expression i:nil="true" />
+                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">true</_value>
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i11">
+                        <PropertyName>ProcessName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>process.ProcessName</_expression>
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i12">
+                        <PropertyName>ProcessId</PropertyName>
+                        <_dataType>Value</_dataType>
+                        <_expression i:nil="true" />
+                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:int">0</_value>
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId>0</SelectedOptionId>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>Activities.Processes.KillProcess</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>d493bdc2-cf8f-417b-9fdb-fedbb0cc3b4c</Id>
+                <Parent z:Ref="i7" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.Try</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i13" i:type="ExecutedStep">
+                <Childs />
+                <Id>7e1ae9bd-a81d-4881-9e1e-755de8da8c4c</Id>
+                <Parent z:Ref="i7" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i14">
+                    <PropertyName>Message</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i15">
+                    <PropertyName>StackTrace</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i16">
+                    <PropertyName>Source</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i17">
+                    <PropertyName>Exception</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.Catch</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i18" i:type="ExecutedStep">
+                <Childs />
+                <Id>2002e10a-e9a6-4f33-8fb4-16268417753f</Id>
+                <Parent z:Ref="i7" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.Finally</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>084e47eb-56c2-4d57-bb1a-0e2a277bc7d7</Id>
+            <Parent z:Ref="i6" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>9755679d-fe7f-4803-a451-201737e8eec1</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i19">
+            <PropertyName>Collection</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>processes.Where(x =&gt; x.ProcessName.Equals(in_ProcessName, StringComparison.CurrentCultureIgnoreCase))</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i20">
+            <PropertyName>Iterator</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>process</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i21">
+            <PropertyName>Counter</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>bef5f521-4a9c-4626-aa8e-4002a090508b</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>KillProcess.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params>
+    <Parameter z:Id="i22">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_ProcessName</Name>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+  </Params>
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
+  <Version i:nil="true" />
+</Script>

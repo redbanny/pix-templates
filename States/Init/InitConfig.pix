@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description>Новый скрипт без наполнения.</Description>
+  <Id>c0b78344-45a3-49f3-82f8-b398dd53fa1c</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i4" i:type="ExecutedStep">
+            <Childs />
+            <Id>0c877607-d1e0-4168-9794-d00ab1581133</Id>
+            <Parent z:Ref="i3" />
+            <PropertyValues>
+              <PropertyValue z:Id="i5">
+                <PropertyName>Value</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>string.IsNullOrEmpty(in_Environment) ? asset : $"{asset}_{in_Environment}"</_expression>
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i6">
+                <PropertyName>To</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>asset</_expression>
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i7" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i8" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i9" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>c8965812-1345-45b0-b6a6-76aef9410649</Id>
+                    <Parent z:Ref="i8" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i10">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression></_expression>
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i11">
+                        <PropertyName>Id</PropertyName>
+                        <_dataType>Value</_dataType>
+                        <_expression i:nil="true" />
+                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:int">0</_value>
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i12">
+                        <PropertyName>Key</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>asset</_expression>
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId>1</SelectedOptionId>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>Activities.Master.Data.GetData</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>6a863701-7ebb-417f-80c9-29e653d9f180</Id>
+                <Parent z:Ref="i7" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.Try</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i13" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i14" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>557e71f3-d134-47b2-87ef-7e27619b7071</Id>
+                    <Parent z:Ref="i13" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i15">
+                        <PropertyName>Text</PropertyName>
+                        <_dataType>Value</_dataType>
+                        <_expression></_expression>
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i16">
+                        <PropertyName>Exception</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>new Exception($"Не удалось получить asset: {asset}", exception)</_expression>
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId>1</SelectedOptionId>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.ThrowException</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>2b449d6f-912a-4c4d-b673-c50167d949bc</Id>
+                <Parent z:Ref="i7" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i17">
+                    <PropertyName>Message</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i18">
+                    <PropertyName>StackTrace</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i19">
+                    <PropertyName>Source</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i20">
+                    <PropertyName>Exception</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>exception</_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.Catch</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i21" i:type="ExecutedStep">
+                <Childs />
+                <Id>b72d7d83-ac4b-402a-aa70-f1a79dc68573</Id>
+                <Parent z:Ref="i7" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.Finally</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>5c5c08e2-18e6-4575-b29e-54bef418ed78</Id>
+            <Parent z:Ref="i3" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>de29cc1a-6349-4a09-b515-1f35364fd0c9</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i22">
+            <PropertyName>Collection</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>in_Assets</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i23">
+            <PropertyName>Iterator</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>asset</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i24">
+            <PropertyName>Counter</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Get assets</Text>
+        <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i25" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i26" i:type="ExecutedStep">
+            <Childs />
+            <Id>dab9bffc-ba66-4a32-8a78-b53696a6fa63</Id>
+            <Parent z:Ref="i25" />
+            <PropertyValues>
+              <PropertyValue z:Id="i27">
+                <PropertyName>Key</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>credential</_expression>
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i28">
+                <PropertyName>Value</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>string.IsNullOrEmpty(in_Environment) ? credential : $"{credential}_{in_Environment}"</_expression>
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i29">
+                <PropertyName>Dictionary</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>out_Config</_expression>
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>b4f00e65-a41c-471a-8fc7-12af0c092512</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i30">
+            <PropertyName>Collection</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>in_Credentials</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i31">
+            <PropertyName>Iterator</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>credential</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i32">
+            <PropertyName>Counter</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Get credentials assets</Text>
+        <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>3640020a-9472-4ff1-8de4-f90f528ff751</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>InitConfig.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params>
+    <Parameter z:Id="i33">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>out_Config</Name>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+    </Parameter>
+    <Parameter z:Id="i34">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_Assets</Name>
+      <TypeString>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+    </Parameter>
+    <Parameter z:Id="i35">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_Credentials</Name>
+      <TypeString>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+    </Parameter>
+    <Parameter z:Id="i36">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_Environment</Name>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+  </Params>
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
+  <Version i:nil="true" />
+</Script>
